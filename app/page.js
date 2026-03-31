@@ -17,7 +17,7 @@ export default function Home() {
     setSending(true)
     const subject = encodeURIComponent(`Inquiry from ${form.name} — ${form.type || 'General'}`)
     const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\nType: ${form.type}\n\n${form.message}`)
-    window.location.href = `mailto:YOUR_EMAIL@EMAIL.COM?subject=${subject}&body=${body}`
+    window.location.href = `mailto:reisha.reynolds@gmail.com?subject=${subject}&body=${body}`
     setTimeout(() => {
       setSubmitted(true)
       setSending(false)
